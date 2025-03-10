@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo - Portföy</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1c1c1c;
+            /* Koyu gri */
+            color: #e0e0e0;
+            font-family: 'Helvetica Neue', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #e0e0e0 !important;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00 !important;
+            /* Altın rengi */
+        }
+
+        .hero {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: #fff;
+            margin: 0;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #ffcc00;
+            margin-top: 10px;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #ffcc00;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card {
+            background-color: #444;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-title {
+            color: #fff;
+        }
+
+        .card-text {
+            color: #ccc;
+        }
+
+        .btn-custom {
+            background-color: #ffcc00;
+            color: #1c1c1c;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #e0e0e0;
+            color: #1c1c1c;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 1rem 0;
+            text-align: center;
+            color: #e0e0e0;
+        }
+
+        .hero-img {
+            max-width: 300px;
+            /* Resmi küçültme */
+            height: auto;
+            /* Yüksekliği otomatik ayarla */
+            border-radius: 10px;
+            /* Kenarları yuvarlama */
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+            /* Gölge efekti */
+            margin-top: 20px;
+            /* Üstten boşluk */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cristiano Ronaldo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hakkimda">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#basarilar">Başarılar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#iletisim">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Cristiano Ronaldo</h1>
+            <p class="hero-subtitle">Futbolun Efsanesi</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+                alt="Cristiano Ronaldo" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Hakkımda -->
+    <section id="hakkimda" class="section">
+        <div class="container">
+            <h2 class="section-title">Hakkımda</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Doğum Tarihi</h5>
+                            <p class="card-text">5 Şubat 1985</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Doğum Yeri</h5>
+                            <p class="card-text">Funchal, Madeira, Portekiz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kulüpler</h5>
+                            <p class="card-text">Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ödüller</h5>
+                            <p class="card-text">5 Ballon d'Or, 4 Şampiyonlar Ligi, Euro 2016 Şampiyonu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Oyun Tarzı</h5>
+                            <p class="card-text">Hız, güç ve teknik beceri ile tanınır.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Milli Takım Kariyeri</h5>
+                            <p class="card-text">2003'ten beri Portekiz milli takımı ile 180'den fazla maç oynadı.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">En Çok Gol Attığı Kulüp</h5>
+                            <p class="card-text">Real Madrid, 450 gol ile kulüp tarihinin en çok gol atan oyuncusu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">İlgi Alanları</h5>
+                            <p class="card-text">Moda, hayır işleri, iş dünyası ve fitness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sosyal Medya</h5>
+                            <p class="card-text">Dünyanın en çok takip edilen sporcu sosyal medya hesaplarına sahip.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Başarılar -->
+    <section id="basarilar" class="section">
+        <div class="container">
+            <h2 class="section-title">Başarılar</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center p-4 bg-dark text-light">
+                        <div class="card-body">
+                            <i class="bi bi-trophy-fill text-warning" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">5 Ballon d'Or</h5>
+                            <p class="card-text">Futbolun en prestijli ödülü.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-4 bg-dark text-light">
+                        <div class="card-body">
+                            <i class="bi bi-shield-shaded text-primary" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">4 Şampiyonlar Ligi</h5>
+                            <p class="card-text">Avrupa’nın en büyük turnuvasında zafer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-4 bg-dark text-light">
+                        <div class="card-body">
+                            <i class="bi bi-flag-fill text-danger" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">Euro 2016 Şampiyonu</h5>
+                            <p class="card-text">Portekiz ile ilk büyük uluslararası zafer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+
+
+    <!-- İletişim -->
+    <section id="iletisim" class="section">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="isim" placeholder="Adınız" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="E-posta" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="mesaj" rows="3" placeholder="Mesajınız"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Kullanıcı Hakları Saklıdır © 2025</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
