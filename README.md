@@ -1,2 +1,2 @@
-# SD
+Süleyman Durmaz 
 Ödev 
